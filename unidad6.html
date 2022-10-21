@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Alumno=prompt("introduce el nombre del alumno");
+        let n1 = parseFloat(prompt("introduce nota1"));
+        let n2 = parseFloat(prompt("introduce nota2"));
+        let n3 = parseFloat(prompt("introduce nota3"));
+// letmedia= (n1+n2+n3)/3
+        let suma=n1+n2+n3;
+        let total= suma/3;
+
+        if (total>5) {
+            document.write ( "<br><br>Estas aprobado con una media final de:  " +total )
+        }
+        if (total<5){
+            document.write ( "<br><br>Estas suspenso con una media final de:  " +total )
+        }
+
+        document.write("<br>Nombre del alumno: " +Alumno);
+        document.write("<br>Nota1: " +n1);
+        document.write("<br>Nota2: " +n2);
+        document.write("<br>Nota3: " +n3);
+        document.write("<br>Suma de todas las notas: " +suma);
+        document.write("<br>Nota media: " +total);
+    
+
+    </script>
+</body>
+</html>
